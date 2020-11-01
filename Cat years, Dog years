@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/cat-years-dog-years
+const humanYearsCatYearsDogYears = function(humanYears) {
+  let cat = 0;
+  let dog = 0;
+  if (humanYears === 1){
+    cat = 15; dog = 15;
+  } 
+  if (humanYears === 2) {
+    cat = 24; dog = 24;
+  } 
+  if (humanYears >= 3) {
+    cat = 24 + 4 * (humanYears - 2); 
+    dog = 24 + 5 * (humanYears - 2);
+  }
+    return [humanYears, cat, dog];
+}
