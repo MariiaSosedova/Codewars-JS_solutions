@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/5dd259444228280032b1ed2a
+function solve(s,g){
+    return s % g !== 0 ? -1 : [g, s - g];
+}
+
+or
+
+function solve(s,g){
+  let a = g;
+  let b = s - a;
+  return s === a + b && a % g === 0 && b % g === 0 ? [a, b] : -1;
+}
