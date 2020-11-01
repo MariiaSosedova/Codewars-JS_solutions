@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/57e921d8b36340f1fd000059
+function shark(pontoonDistance, sharkDistance, yourSpeed, sharkSpeed, dolphin){
+ if (dolphin) {
+  sharkSpeed = sharkSpeed / 2;
+ } let yourtime = pontoonDistance / yourSpeed;
+   let sharktime = sharkDistance / sharkSpeed;
+   return yourtime < sharktime ? 'Alive!' : 'Shark Bait!';
+}
