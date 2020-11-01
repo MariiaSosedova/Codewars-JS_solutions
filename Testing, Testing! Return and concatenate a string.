@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5977387e131c07082b000098
+function getRes(myScore) {
+ return myScore >= 70 ? "Congratulations, you have passed!" + " Thank you for taking part." 
+       : "Sorry, you have failed. Better luck next time!" + " Thank you for taking part.";
+}
