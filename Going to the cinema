@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
+function movie(card, ticket, perc) {
+  let count = 0;
+  let a = 0;
+  let b = card;
+  let ticketb = ticket; 
+  while (Math.ceil(a) <= Math.ceil(b)) {
+    a = a + ticket;
+    ticketb = ticketb * perc; 
+    b += ticketb;
+    count++;
+  }
+  return count; 
+}
