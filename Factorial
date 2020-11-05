@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57a049e253ba33ac5e000212
+function factorial(n){
+ let f = n;
+  while (n > 1) {
+   n = n - 1;
+   f *= n;
+  }
+  return f !== 0 ? f : 1;
+}
