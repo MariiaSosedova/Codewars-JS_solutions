@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/558f9f51e85b46e9fa000025
+function differenceOfSquares(n){
+  let qs = 0;
+  let sq = 0;
+  let i = 1;
+  while (i <= n) {
+    qs +=i;
+    sq += i ** 2;
+    i++;
+  }
+  qs = qs ** 2;
+  return qs - sq;
+}
