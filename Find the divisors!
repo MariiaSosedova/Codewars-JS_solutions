@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/544aed4c4a30184e960010f4
+function divisors(n) {
+  let a = [];
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+     a.push(i);
+    } 
+  }
+  return a.length > 0 ? a : `${n} is prime`;
+}
