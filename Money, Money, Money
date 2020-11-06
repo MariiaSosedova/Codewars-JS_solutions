@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/563f037412e5ada593000114
+function calculateYears(principal, interest, tax, desired) {
+ let sum = principal;
+ let years = 0;
+   while (sum < desired) {
+    let int = sum * interest;
+    let t = int * tax;
+    sum = sum + int - t;
+    years++;
+   }
+  return years;
+}
