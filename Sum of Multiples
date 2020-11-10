@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57241e0f440cd279b5000829
+
+function sumMul(n,m){
+ let s = 0;
+   if (n < m) {
+    for (let i = n; i < m; i++) {
+     if (i % n === 0) {
+      s += i;
+     } 
+    }
+     return s;
+   } else return  'INVALID';
+}
