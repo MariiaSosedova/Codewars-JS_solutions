@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/562926c855ca9fdc4800005b
+
+function numberToPower(n, p){
+  let m = 1;
+  for (let i = 1; i <= p; i++) {
+    m *= n;
+  }
+  return m;
+}
