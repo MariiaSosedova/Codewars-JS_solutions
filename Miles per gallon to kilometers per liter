@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/557b5e0bddf29d861400005d
+
+function converter (mpg) {
+  let lpg = 4.54609188;
+  let kmpm = 1.609344;
+  let lpk = mpg * (kmpm / lpg);
+  return +lpk.toFixed(2);
+}
