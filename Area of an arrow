@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/589478160c0f8a40870000bc
+
+function arrowArea(a,b) {
+ let h = b * 0.5;
+  return 0.5 * a * h;
+}
