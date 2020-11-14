@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55b051fac50a3292a9000025
+
+let FilterString = function(s) {
+  return +s.replace(/\D/g, '');
+}
+
+OR:
+
+let FilterString = function(s) {
+  return +s.replace(/[^0-9]/g, '');
+}
