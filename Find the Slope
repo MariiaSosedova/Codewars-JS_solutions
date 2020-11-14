@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55a75e2d0803fea18f00009d
+
+function slope(points) {
+let a = points[0];
+let b = points[1];
+let c = points[2];
+let d = points[3];
+  let m = (b - d) / (a - c);
+   if ((a - c) !== 0) return String(m);
+  else return "undefined";
+}
