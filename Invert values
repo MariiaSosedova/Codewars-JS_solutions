@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/invert-values
+
+function invert(arr) {
+  let a = [];
+  for(let i = 0; i < arr.length; i++) {
+    a.push(-arr[i]);
+  }
+    return a;
+}
