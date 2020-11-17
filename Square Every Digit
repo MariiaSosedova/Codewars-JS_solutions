@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/square-every-digit
+
+function squareDigits(n){
+   n = n +'';
+   let a;
+   let res = '';
+   for(let i = 0; i < n.length; i++) {
+     a = Math.pow(n[i], 2);
+     res += a;
+   }
+   return +res;
+}
