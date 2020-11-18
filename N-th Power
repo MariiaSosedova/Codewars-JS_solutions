@@ -1,11 +1,5 @@
 https://www.codewars.com/kata/57d814e4950d8489720008db
 
 function index(arr, n){
-  let x;
-  for(let i = 0; i <= arr.length; i++) {
-      if (i === n) {
-      x = Math.pow(arr[i], n);
-      }
-    }
-    return n >= arr.length ? -1 : x;
+  return n < arr.length ? Math.pow(arr[n], n) : -1;
 }
