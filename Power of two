@@ -5,3 +5,11 @@ function isPowerOfTwo(n){
   } 
   return n === 1;
 }
+
+
+OR:
+
+
+function isPowerOfTwo(n){
+  return Math.log2(n) % 1 === 0;
+}
