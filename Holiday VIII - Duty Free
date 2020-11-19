@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/holiday-viii-duty-free
+
+Solution:
+
+function dutyFree(nP, d, hol){
+  return Math.floor(hol / (nP * d / 100));
+}
