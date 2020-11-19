@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/all-star-code-challenge-number-22
+
+
+Solution:
+
+function toTime(s) {
+ let h = Math.floor(s / 3600);
+     m = Math.floor((s - h * 3600) / 60);
+  return `${h} hour(s) and ${m} minute(s)`;
+}
