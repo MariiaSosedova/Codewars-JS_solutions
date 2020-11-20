@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55e2adece53b4cdcb900006c
+
+Solution:
+
+function race(v1, v2, g) {
+  let t = Math.trunc((g / (v2-v1)) * 3600);
+  let h = Math.floor(t / 3600);
+  let m = Math.floor((t - h * 3600) / 60);
+  let s = Math.floor(t - h * 3600 - m * 60);
+  return v1 >= v2 ? null : [h, m, s];
+}
