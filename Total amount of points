@@ -4,3 +4,16 @@ function points(arr) {
   arr.forEach((el, i)=> (el[0] > el[2]) ? s += 3: el[0] === el[2] ? s+= 1: s);
   return s;
 }
+
+
+OR
+
+
+function points(games) {
+  let total = 0;
+  for(let el of games) {
+    if (el[0] > el[2]) total +=3;
+    if (el[0] === el[2]) total +=1;
+  }
+  return total;
+}
