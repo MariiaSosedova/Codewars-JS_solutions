@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/56b29582461215098d00000f
+
+function pipeFix(num){
+  let arr = [];
+  for(let i = Math.min(...num); i <= Math.max(...num); i++){
+    arr.push(i);
+  }
+  return arr;
+}
