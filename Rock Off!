@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/5b097da6c3323ac067000036
+
+
+function solve(a, b) {
+  let countA = 0;
+  let countB = 0;
+  for(let i = 0; i <= 2; i++) {
+    if (a[i] > b[i]) countA++;
+    if (a[i] < b[i]) countB++;
+  }
+  
+  if (countA === countB) {
+    return `${countA}, ${countB}: that looks like a "draw"! Rock on!`;
+  } else if  (countA > countB){
+      return `${countA}, ${countB}: Alice made "Kurt" proud!`;
+    } else return `${countA}, ${countB}: Bob made "Jeff" proud!`;
+}
