@@ -12,3 +12,19 @@ function sumOrProduct(array, n) {
   }
   return sum > product ? 'sum' : sum < product ? 'product' : 'same';
 }
+
+
+OR
+
+
+function sumOrProduct(array, n) {
+  let sum = 0,
+      product = 1;
+  array = array.sort((a, b) => a - b);
+  let part1 = array.slice(0, n);
+  let part2 = array.slice(-n);
+  sum = part2.reduce((a, b) => a + b, 0);
+  product = part1.reduce((a, b) => a * b, 1);
+  return sum > product ? 'sum' : sum < product ? 'product' : 'same';
+  
+}
