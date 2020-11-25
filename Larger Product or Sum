@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/5c4cb8fc3cf185147a5bdd02
+
+function sumOrProduct(array, n) {
+  let sum = 0,
+      product = 1;
+  array = array.sort((a, b) => a - b);
+  for(let i = array.length - 1; i >= array.length - n; i--) {
+    sum +=array[i];
+  }
+  for(let i = 0; i < n; i++) {
+    product *= array[i];
+  }
+  return sum > product ? 'sum' : sum < product ? 'product' : 'same';
+}
