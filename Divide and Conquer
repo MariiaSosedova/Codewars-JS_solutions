@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57eaec5608fed543d6000021
+
+function divCon(x){
+  let s = 0;
+  let d = 0;
+  for(let el of x){
+    if(typeof el === 'string') s += +el;
+    else d += el;
+  }
+  return d - s;
+}
