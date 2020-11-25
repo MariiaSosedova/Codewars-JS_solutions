@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/how-good-are-you-really
+
+function betterThanAverage(classPoints, yourPoints) {
+  let s = 0;
+  for(let el of classPoints) {
+    s += el;
+  }
+  return yourPoints > s / classPoints.length;
+}
