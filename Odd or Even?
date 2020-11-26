@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/odd-or-even
+
+
+function oddOrEven(array) {
+  let sum = 0;
+  for(let el of array) {
+    sum += el;
+  } 
