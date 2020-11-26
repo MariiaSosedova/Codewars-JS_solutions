@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/58acfe4ae0201e1708000075
+
+function inviteMoreWomen(L) {
+  let w = 0;
+  let m = 0;
+  for(let el of L) {
+    if(el === -1) w++;
+    if(el === 1) m++;
+  }
+  return m > w;
+}
