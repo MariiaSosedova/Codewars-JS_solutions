@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095
+
+function maxDiff(list) {
+  if (list.length === 0) return 0;
+  else return Math.max(...list) - Math.min(...list);
+};
