@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/545a4c5a61aa4c6916000755
+
+let gimme = function (arr) {
+  let a = 0;
+  for(let i = 0; i < 4; i++){
+    if (arr[i] < Math.max(...arr) && arr[i] > Math.min(...arr)) a = i;
+  }
+  return a;
+};
