@@ -13,3 +13,13 @@ function removeSmallest(num) {
      arr.splice(minIndex, 1);
      return arr;
 }
+
+
+OR
+
+
+function removeSmallest(num) {
+  let arr = num.slice(0);
+  arr.splice(arr.indexOf(Math.min(...arr)), 1);
+  return arr;
+}
