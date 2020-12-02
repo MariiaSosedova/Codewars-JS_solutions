@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/55edaba99da3a9c84000003b
+
+function divisibleBy(numbers, divisor){
+  let arr = numbers.filter(el => el % divisor === 0);
+  return arr;
+}
