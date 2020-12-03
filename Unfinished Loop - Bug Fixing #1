@@ -1,0 +1,12 @@
+https://www.codewars.com/kata/55c28f7304e3eaebef0000da
+
+
+function createArray(number){
+  let newArray = [1];
+  let counter = 1;
+  for(let i = 1; i < number; i++){
+    counter += 1;
+    newArray.push(counter);
+  }
+  return newArray;
+}
