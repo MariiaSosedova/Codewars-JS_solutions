@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5436f26c4e3d6c40e5000282
+
+function sumOfN(n) {
+  let arr = [0];
+  let el = 0;
+  for(let i = 1; i <= Math.abs(n); i++) {
+    if(n > 0) {
+      el += i;
+      arr.push(el);
+    } else {
+      el += i;
+      arr.push(-el)
+    }
+  }
+  return arr;
+};
