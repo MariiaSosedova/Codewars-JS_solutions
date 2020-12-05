@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58ebfa6ef7cda1a3d4000048
+
+function holycats(input){
+  let arr = [];
+  for(let i = 0; i < input.length; i++){
+    if (input[i] === '^(~_~)^' || input[i] === '"(^_^)"' || input[i] === '*(^_^)*' ) arr.push(input[i]);
+  }
+  return arr;
+}
+
