@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5a651865fd56cb55760000e0
+
+let arrayLeaders = numbers => {
+  return numbers.filter((el, i) => el > numbers.slice(i+1).reduce((s, el) => s + el, 0));
+}
+
+OR
+
+
+var arrayLeaders = arr => {
+  let sum = arr.reduce((s,el) => s + el, 0),
+      array = [];
+  for(let el of arr){
+    sum -= el;
+    if(el > sum) array.push(el);
+  }
+  return array;
+}
