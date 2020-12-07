@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a090c4e697598d0b9000004
+
+
+function solve(arr){
+  arr = arr.sort((a, b) => b-a);
+  let length = arr.slice().length
+  let a = [];
+  for(let i = 0; i < length; i++){
+      a.push(arr.shift());
+      a.push(arr.pop());
+    } 
+     return a.filter(el =>el !== undefined);
+};
