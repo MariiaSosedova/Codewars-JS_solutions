@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/54599705cbae2aa60b0011a4
+
+function one(arr, fun){
+  let a = arr.filter(el => fun(el));
+  return a.length === 1;
+}
