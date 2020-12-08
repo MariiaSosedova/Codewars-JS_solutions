@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/a-wolf-in-sheeps-clothing
+
+function warnTheSheep(queue) {
+  let n = queue.indexOf("wolf");
+  return n === queue.length-1 ? "Pls go away and stop eating my sheep" : `Oi! Sheep number ${-(n-queue.length+1)}! You are about to be eaten by a wolf!` ;
+}
