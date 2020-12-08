@@ -1,0 +1,21 @@
+https://www.codewars.com/kata/57f604a21bd4fe771b00009c
+
+function meeting(x){
+  return x.includes('O') ? x.indexOf('O') : 'None available!';
+}
+
+OR
+
+function meeting(x){
+  return x.indexOf('O', 0) === -1 ? 'None available!' : x.indexOf('O', 0);
+}
+
+OR
+
+function meeting(x){
+  let a;
+  for(let el of x){
+    if(el === 'O') a = x.indexOf(el);
+  }
+  return a === undefined ? 'None available!' : a;
+}
