@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/be-concise-iv-index-of-an-element-in-an-array
+
+function find(arr, el) {
+  return arr.includes(el) ? arr.indexOf(el) : "Not found";
+}
