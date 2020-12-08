@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58be5aff9fb673ada300004c
+
+let noLove = function (arr) {
+   return arr.filter(el => el !== 69);
+}
