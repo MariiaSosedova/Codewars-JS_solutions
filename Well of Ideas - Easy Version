@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/57f222ce69e09c3630000212
+
+function well(x){
+  let a = x.filter(el => el === 'good');
+  return a.length === 0 ? 'Fail!': a.length <= 2 ? 'Publish!' : 'I smell a series!';
+}
