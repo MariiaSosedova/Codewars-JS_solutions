@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5656b6906de340bd1b0000ac
+
+function longest(s1, s2) {
+  let str = s1 + s2;
+  let arr = str.split('');
+      arr = arr.filter((el,i) => i === arr.indexOf(el)).sort();
+  return arr.join("");
+}
