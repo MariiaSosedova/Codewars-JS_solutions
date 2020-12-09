@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/583af10620dda4da270000c5
+
+function mergeArrays(a, b) {
+  let arr = [];
+  let m = Math.max(a.length, b.length);
+  for(let i = 0; i < m; i++){
+    arr.push(a[i]);
+    arr.push(b[i]);
+  }
+  return arr.filter(el => el !== undefined);  
+}
