@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/580a4001d6df740d61000301
+
+function completeSeries(arr) {
+  if (arr.filter(el => arr.indexOf(el) !== arr.lastIndexOf(el)).length !== 0) return [0];
+  let res = [];
+  for(let i = 0; i <= Math.max(...arr); i++) {
+      res.push(i);
+  }
+  return res.filter(el => res.indexOf(el) === res.lastIndexOf(el)).sort((a, b) => a - b); 
+} 
