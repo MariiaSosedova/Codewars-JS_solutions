@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/557af4c6169ac832300000ba
+
+function removeRotten(bagOfFruits){
+  return bagOfFruits && bagOfFruits.length ? bagOfFruits.join(',').replace(/rotten/g, '').toLowerCase().split(',') : [];
+}
