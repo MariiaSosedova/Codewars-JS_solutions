@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/556196a6091a7e7f58000018
+
+function largestPairSum(nums){
+  nums.sort((a,b) => a-b);
+  return nums[nums.length-2] + nums[nums.length-1];
+}
