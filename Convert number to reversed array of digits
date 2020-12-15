@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/convert-number-to-reversed-array-of-digits
+
+
+function digitize(n) {
+  let arr = [];
+  let str = n +'';
+  for(let el of str) {
+    arr.push(+el);
+  }
+  return arr.reverse();
+}
