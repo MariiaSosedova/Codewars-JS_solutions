@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5731861d05d14d6f50000626
+
+function bigToSmall(arr){
+  let res = [].concat(...arr);
+  res = res.sort((a, b) => b-a);
+  return res.join(">");
+}
