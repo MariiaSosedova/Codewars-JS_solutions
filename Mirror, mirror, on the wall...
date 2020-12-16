@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/5f55ecd770692e001484af7d
+
+function mirror(data) {
+  let a = data.slice().sort((a,b) => a-b);
+  let arr = data.slice().sort((a,b) => b-a);
+  arr.shift();
+  return a.concat(arr);
+}
