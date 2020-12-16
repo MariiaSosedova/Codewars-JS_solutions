@@ -9,3 +9,10 @@ function findChildren(santasList, children) {
   }
   return arr.filter((el,i) => i === arr.indexOf(el)).sort();
 }
+
+
+OR:
+
+function findChildren(santasList, children) {
+  return [...new Set(santasList.filter(el => children.includes(el)).sort())];
+}
