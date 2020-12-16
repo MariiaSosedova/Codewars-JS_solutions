@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5a91a7c5fd8c061367000002
+
+function minimumSteps(numbers, value){
+  numbers.sort((a,b) => a-b);
+  let count = 0;
+  let sum = numbers[0];
+  for(let i = 1; i < numbers.length; i++){
+    if(sum >= value) break;
+    else sum += numbers[i];
+    count++;
+  }
+  return count;
+}
