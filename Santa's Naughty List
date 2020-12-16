@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5a0b4dc2ffe75f72f70000ef
+
+function findChildren(santasList, children) {
+  let arr = [];
+  for(let el of santasList) {
+    if (children.includes(el)){
+      arr.push(el);
+    }
+  }
+  return arr.filter((el,i) => i === arr.indexOf(el)).sort();
+}
