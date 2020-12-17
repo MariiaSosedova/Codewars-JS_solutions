@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/csv-representation-of-array
+
+function toCsvText(array) {
+   return array.join('\n');
+}
