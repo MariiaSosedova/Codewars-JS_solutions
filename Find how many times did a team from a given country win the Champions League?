@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/581b30af1ef8ee6aea0015b9
+
+function countWins(winnerList, country) {
+  let count = 0;
+  for (let el of winnerList){
+    if(el.country === country) count++;
+  }
+  return count;
+}
+
+OR:
+
+
+function countWins(winnerList, country) {
+  return winnerList.filter(el => el.country === country).length;
+}
