@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/59e7202ffc3c4952940000a9
+
+function sortRainbow(colour){
+  let rainbow = ['red','orange','yellow','green','blue','indigo','violet'];
+  return rainbow.every((el, i) => colour[i] === el);
+}
