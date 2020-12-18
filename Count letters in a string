@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/58e6868cfd2d89e9370001ad
+
+function countLetters (string) {
+  if (typeof string !== 'string') return null;
+  string = string.toLowerCase();
+  string = string.replace(/[^a-z]/g, '');
+  let obj = {};
+  for (let el of string) {
+    if (obj[el]) obj[el]++;
+    else obj[el] = 1;
+  }
+  return obj;
+}
