@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/56786a687e9a88d1cf00005d
+
+function validateWord(s){
+  s = s.toLowerCase();
+  let arr = [];
+  for (let el of s) {
+    arr.push(el);
+  }
+   return arr.every(el => arr.indexOf(el) !== arr.lastIndexOf(el)) ? true : arr.every(el => arr.indexOf(el) === arr.lastIndexOf(el));
+}
