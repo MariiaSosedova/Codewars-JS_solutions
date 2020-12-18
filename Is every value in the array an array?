@@ -6,3 +6,10 @@ const arrCheck = arr => {
   }
   return true;
 }
+
+
+OR:
+
+const arrCheck = value => {
+  return value.every(el => Array.isArray(el)); 
+}
