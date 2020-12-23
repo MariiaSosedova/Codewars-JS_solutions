@@ -1,0 +1,22 @@
+A positive integer is given. Get an array of its digits.
+Write a function called arrayOfDigits that takes n as an argument and returns an array of its digits. 
+The use of methods is prohibited. Use a do while loop in your solution.
+
+Examples:
+arrayOfDigits (123456) return [1, 2, 3, 4, 5, 6];
+arrayOfDigits (1000) return [1,0,0,0];
+arrayOfDigits (1) return [1].
+arrayOfDigits (0) return [0].
+
+Solution:
+
+function arrayOfDigits(n){
+  let arr = [];
+  n = n + '';
+  let i = n.length-1;
+  do {
+   arr.unshift(+n[i]);
+   i--;
+  } while (arr.length !== n.length);
+  return arr;
+}
