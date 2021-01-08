@@ -1,0 +1,8 @@
+https://www.codewars.com/kata/56f7493f5d7c12d1690000b6
+
+function mean(lst){
+  let str = lst.reduce((a,b) => a+b).replace(/[0-9]/g,'');
+  let nums = lst.map(el => +el).filter(el => !Number.isNaN(el));
+  let num = nums.reduce((a,b) => (a + b))/nums.length;
+  return [num, str];
+}
