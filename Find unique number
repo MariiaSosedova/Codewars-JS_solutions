@@ -1,0 +1,18 @@
+https://www.codewars.com/kata/5822d900b81f701dd40002c9
+
+function findUnique(arr){
+  let float = arr.filter(el => el % 1 !== 0);
+  let int = arr.filter(el => el % 1 === 0);
+  let pos = arr.filter(el => el > 0);
+  let neg = arr.filter(el => el < 0);
+  let even = arr.filter(el => el % 2 === 0);
+  let odd = arr.filter(el => el % 2 !== 0);
+  let diff = arr.filter(el => arr.indexOf(el) === arr.lastIndexOf(el));
+  if (float.length === 1) return float[0];
+  if (int.length === 1) return int[0];
+  if (pos.length === 1) return pos[0];
+  if (neg.length === 1) return neg[0];
+  if (odd.length === 1) return odd[0];
+  if (even.length === 1) return even[0];
+  if (diff.length === 1) return diff[0];
+}
