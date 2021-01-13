@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/speedcode-number-2-array-madness
+
+function arrayMadness(a, b) {
+  return a.map(el => el ** 2).reduce((a, b) => a + b) > b.map(el => el ** 3).reduce((a ,b) => a+ b);
+}
+
+OR
+
+function arrayMadness(a, b) {
+  return a.reduce((acc, el) => acc + el ** 2, 0) > b.reduce((acc, el) => acc + el ** 3, 0);
+}
