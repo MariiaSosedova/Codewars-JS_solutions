@@ -9,3 +9,10 @@ function digitize(n) {
   }
   return arr.reverse();
 }
+
+
+OR
+
+function digitize(n) {
+  return (n + '').split('').map(el => +el).reverse();
+}
