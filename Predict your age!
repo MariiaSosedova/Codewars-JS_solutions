@@ -4,3 +4,11 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
   let arr = [age1,age2,age3,age4,age5,age6,age7,age8];
   return Math.trunc(Math.sqrt(arr.map(el => el ** 2).reduce((a, b) => a + b, 0)) / 2);
 }
+
+
+OR
+
+function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
+  let arr = [age1,age2,age3,age4,age5,age6,age7,age8]
+  return Math.trunc(Math.hypot(...arr) / 2);
+}
