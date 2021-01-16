@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59a602dc57019008d900004e
+
+function transform(array) {
+	return array.map(el => el + '').join("");
+}
