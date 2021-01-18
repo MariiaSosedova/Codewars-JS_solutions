@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/58846d50f54f021d90000012
+
+
+function rounders(value) {
+  let i = 0;
+  while (value > 10 ){
+    value = Math.round(value / 10);
+    i++;
+  }
+ return value * Math.pow(10, i);
+}
