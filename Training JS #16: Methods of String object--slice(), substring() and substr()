@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57274562c8dcebe77e001012
+
+function cutIt(arr){
+  let min = arr[0];
+  for(let str of arr) {
+    if(str.length < min.length) min = str;
+  }
+  return arr.map(el => el.slice(0, min.length));
+}
