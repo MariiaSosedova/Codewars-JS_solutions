@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/58c9322bedb4235468000019
+
 function isVeryEvenNumber(n) {
   n = String(n);
   while (n.length > 1) {
