@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/56f6919a6b88de18ff000b36
+
 function howManyDalmatians(number) {
    return number <= 10 ? "Hardly any"
         : number <= 50 ? "More than a handful!" 
