@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/582e4c3406e37fcc770001ad
+
+function joinStrings(str1, str2){
+   return `${str1} ${str2}`;
+}
