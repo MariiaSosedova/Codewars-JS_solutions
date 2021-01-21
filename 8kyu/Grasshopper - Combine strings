@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/grasshopper-combine-strings
+
+function combineNames(name1, name2) {
+  return `${name1} ${name2}`;
+}
