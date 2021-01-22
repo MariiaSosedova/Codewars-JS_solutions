@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1
+
+function duplicateCount(text){
+  let s1 = text.toLowerCase().split('');
+  let s2 = s1.filter((el,i) => s1.indexOf(el) !== s1.lastIndexOf(el) && i === s1.indexOf(el));
+  return s2.length;
+}
