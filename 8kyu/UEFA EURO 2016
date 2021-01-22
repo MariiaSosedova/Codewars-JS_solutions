@@ -1,0 +1,7 @@
+https://localcoding.us/course/5d1cbf67086fc30038bf1859/lesson/5d2eb6620f1c8500385e7064
+
+function uefaEuro2016(t, s){
+  return s[0] === s[1] ?  `At match ${t[0]} - ${t[1]}, teams played draw.`
+         : s[0] > s[1] ? `At match ${t[0]} - ${t[1]}, ${t[0]} won!` 
+         : `At match ${t[0]} - ${t[1]}, ${t[1]} won!`;    
+}
