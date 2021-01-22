@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/54f9f4d7c41722304e000bbb
+
+function firstDup (s) {
+  for(let el of s){
+    if(s.indexOf(el) !== s.lastIndexOf(el)) return el;
+  }
+}
