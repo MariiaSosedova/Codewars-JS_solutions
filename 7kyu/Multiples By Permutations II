@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/5ba178be875de960a6000187
+
+function findLowestInt(k1) {
+  let k2 = k1 + 1;
+  let n = 1;
+  while (true) {
+    let res1 = n * k1,
+        res2 = n * k2;
+    let s1 = (res1 + '').split('').sort().join(""),
+        s2 = (res2 + '').split('').sort().join("");
+    if (s1 === s2) return n;
+    n++;
+  }
