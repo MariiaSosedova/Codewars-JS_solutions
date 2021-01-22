@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/57de78848a8b8df8f10005b1
+
+function howMuchCoffee(ev) {
+  let arr = ['cw','CW','CAT', 'cat', 'DOG', 'dog','movie', 'MOVIE'];
+  let count = 0;
+  for(let el of ev) {
+    if(arr.includes(el)) {
+      if(el === el.toLowerCase()) count++;
+      else count += 2;
+    }
+  }
+  return count > 3 ? 'You need extra sleep' : count;
+}
