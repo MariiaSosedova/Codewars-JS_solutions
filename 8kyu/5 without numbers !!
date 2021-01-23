@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/5-without-numbers
+
+function unusualFive() {
+  return "".codePointAt();
+}
+
