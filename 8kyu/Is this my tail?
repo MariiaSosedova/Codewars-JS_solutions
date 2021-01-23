@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/is-this-my-tail
+
+function correctTail(body, tail){
+  let last = body.substr(body.length-(tail.length))
+  return last === tail;
+}
