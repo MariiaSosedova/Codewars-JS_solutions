@@ -4,3 +4,10 @@ function correctTail(body, tail){
   let last = body.substr(body.length-(tail.length))
   return last === tail;
 }
+
+
+OR:
+
+function correctTail(body, tail){
+  return body[body.length - 1] === tail;
+}
