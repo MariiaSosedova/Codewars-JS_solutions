@@ -4,3 +4,8 @@ function unusualFive() {
   return "".codePointAt();
 }
 
+OR:
+
+function unusualFive() {
+  return 'five&'.length;
+}
