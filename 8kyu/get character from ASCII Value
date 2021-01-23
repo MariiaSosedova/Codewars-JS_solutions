@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/get-character-from-ascii-value
+
+function getChar(c){
+  return String.fromCodePoint(c);
+}
