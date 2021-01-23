@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/abbreviate-a-two-word-name
+
+function abbrevName(name){
+  let a = name.split(" ");
+  return `${name[0].toUpperCase()}.${a[1][0].toUpperCase()}`;
+}
