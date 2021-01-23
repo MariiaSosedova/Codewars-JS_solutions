@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/numbers-to-letters
+
+function switcher(x){
+  let str = '';
+  let abc = '0zyxwvutsrqponmlkjihgfedcba!? ';
+  for(let i = 0; i < x.length; i++){
+    str += abc[x[i]];
+  }
+  return str;
+}
