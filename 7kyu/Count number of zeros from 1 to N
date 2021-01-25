@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/557cffec8c3e8e55cc00010f
+
+function countZeros(n) {
+  let str = "";
+  for(let i = 1; i <= n; i++) {
+    str += i;
+  }
+  return str.replace(/[^0]/g, "").length;
+}
