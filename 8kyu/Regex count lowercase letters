@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/56a946cd7bd95ccab2000055
+
+function lowercaseCount(str){
+  let lowerCase = 0;
+  for(let el of str) {
+    if (el >= 'a' && el <= 'z') lowerCase ++;
+  }
+  return lowerCase;
+}
+
+OR
+
+function lowercaseCount(str){
+  return str.replace(/[^a-z]/g, "").length;
+}
