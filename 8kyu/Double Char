@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/double-char
+
+function doubleChar(str) {
+  return str.split("").map(el =>  el + el).join("");
+}
+
+OR
+
+function doubleChar(str) {
+  let newstr = "";
+  for (let el of str) {
+    newstr +=el + el;
+  }
+  return newstr;
+}
