@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/spacify
+
+function spacify(str) {
+  let newstr = "";
+  for(let el of str) {
+    newstr += " " + el;
+  }
+  return newstr.trim();
+}
