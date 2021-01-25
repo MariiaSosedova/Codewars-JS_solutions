@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/remove-string-spaces
+
+function noSpace(x){
+  return x.replace(/[ ]/g, "");
+}
+
+OR
+
+function noSpace(x){
+  let str = "";
+  for(let el of x) {
+    if (el !== " ") str += el;
+  }
+  return str;
+}
