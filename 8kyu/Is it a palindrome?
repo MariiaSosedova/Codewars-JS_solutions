@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57a1fd2ce298a731b20006a4
+
+function isPalindrome(x) {
+  let x1 = "";
+  for(let i = 0; i < x.length; i++) {
+    x1 += x[x.length - i - 1];
+  }
+  return x.toLowerCase() == x1.toLowerCase();
+}
