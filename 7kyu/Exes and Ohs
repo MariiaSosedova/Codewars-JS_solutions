@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/55908aad6620c066bc00002a
+
+function XO(str) {
+  let countO = 0,
+      countX = 0;
+  for(let el of str) {
+    if(el.toLowerCase() === 'o') countO++;
+    if(el.toLowerCase() === 'x') countX++;
+  }
+  return countO === countX;
+}
