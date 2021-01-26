@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/capitalization-and-mutability
+
+function capitalizeWord(word) {
+  return word[0].toUpperCase() + word.slice(1);
+}
+
+OR
+
+function capitalizeWord(word) {
+  let str = word[0].toUpperCase();
+  for(let i = 1; i < word.length; i++) {
+    str += word[i];
+  }
+  return str;
+}
