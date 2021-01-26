@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/the-wide-mouthed-frog
+
+function mouthSize(animal) {
+  return animal === 'alligator' ? 'small' : 'wide';
+}
