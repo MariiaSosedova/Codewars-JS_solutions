@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/58aac690d68a9c7a300000c0
+
+function capitalizeEachWord(str) {
+  return str.toUpperCase();
+}
