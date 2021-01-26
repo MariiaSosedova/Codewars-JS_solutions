@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/57e3f79c9cb119374600046b
+
+function hello(name) {
+  if (name === '' || !name) return "Hello, World!"
+  let str = name[0].toUpperCase();
+  for(let i = 1; i < name.length; i++) {
+    str += name[i].toLowerCase();
+  }
+  return `Hello, ${str}!`;
+}
