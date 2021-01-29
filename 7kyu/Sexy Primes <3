@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/56b58d11e3a3a7cade000792
+
+function isPrime(n) {
+   if(n <= 1) return false;
+   for(let i = 2; i < Math.floor((n ** 0.5 + 1)); i++) {
+     if(n % i === 0) return false;
+   } 
+  return true;
+}
+
+function sexy_prime(x, y){
+ return isPrime(x) && isPrime(y) && Math.abs(x-y) === 6;
+}
