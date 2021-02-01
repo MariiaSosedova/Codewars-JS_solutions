@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/find-the-capitals-1
+
+function capitals(word) {
+  let res = [];
+  let arr = word.split('');
+  let arrUp = word.toUpperCase().split('');
+  for(let i = 0; i < arr.length; i++) {
+    for(let j = 0; j < arrUp.length; j++){
+      if(arr[i] === arrUp[j] && i === j) res.push(i);
+    }
+  }
+  return res;
+};
