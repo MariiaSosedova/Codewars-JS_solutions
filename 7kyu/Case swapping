@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5590961e6620c0825000008f
+
+function swap(str){
+  let newstr = '';
+  for(let i = 0; i < str.length; i++) {
+    if(str.toUpperCase()[i] === str[i]) newstr += str.toLowerCase()[i];
+    else newstr += str.toUpperCase()[i];
+  }
+  return newstr;
+}
