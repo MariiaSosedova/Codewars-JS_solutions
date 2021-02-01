@@ -1,0 +1,16 @@
+https://localcoding.us/course/5d1cbf67086fc30038bf1859/lesson/5dcb0746a7c36b003ccf203b
+
+function accum(s) {
+  let str = '';
+	for(let i = 0; i < s.length; i++){
+    str += s[i].toUpperCase() + s[i].toLowerCase().repeat(i) + '-';
+  }
+  return str.slice(0, -1);
+}
+
+OR
+
+
+function accum(s) {
+  return s.split('').map((el, i) => el.toUpperCase() + el.toLowerCase().repeat(i)).join('-');
+}
