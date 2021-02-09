@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5729b103dd8bac11a900119e
+
+function fiveLine(s){
+   let str = '';
+  for(let i = 1; i <= 5; i++) {
+    str += s.trim().repeat(i) + '\n';
+  }
+  return str.slice(0, -1);
+}
