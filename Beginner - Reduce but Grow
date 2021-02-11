@@ -1,5 +1,0 @@
-https://localcoding.us/course/5d1cbf67086fc30038bf1859/lesson/5dcf7185d95082003c265601
-
-function grow(x){
-  return x.reduce((acc, el) => acc * el, 1);
-}
