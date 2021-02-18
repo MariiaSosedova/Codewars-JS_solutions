@@ -1,8 +1,9 @@
 https://www.codewars.com/kata/5a084a098ba9146690000969
 
 function timeConvert(num) { 
-  let hours = Math.floor(Math.abs(num / 60)) + '';
+  let hours = Math.floor(num / 60) + '';
   let minutes = num % 60 + '';
   return num <= 0 ? "00:00" : hours.padStart(2, "0") + ':' + minutes.padStart(2, "0"); 
 
 }
+
