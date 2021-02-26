@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/558f9f51e85b46e9fa000025
+
 function differenceOfSquares(n){
   let qs = 0;
   let sq = 0;
