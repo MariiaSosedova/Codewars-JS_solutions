@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
+
 function movie(card, ticket, perc) {
   let count = 0;
   let a = 0;
