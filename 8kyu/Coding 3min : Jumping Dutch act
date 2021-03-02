@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/570bcd9715944a2c8e000009
+
+function sc(floor){
+  return floor <= 1 ? "" 
+         : floor <= 6 ? "Aa~ ".repeat(floor - 1) + "Pa! Aa!" 
+         : "Aa~ ".repeat(floor - 1) + "Pa!";
+}
