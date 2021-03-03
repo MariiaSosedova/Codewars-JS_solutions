@@ -8,3 +8,17 @@ function factorial(n){
   }
   return f !== 0 ? f : 1;
 }
+
+
+OR
+
+function factorial(n){
+  let f = 1;
+  for(let i = 1; i <= n; i++){
+    f *= i;
+  }
+  return f;
+}
+
+
+
