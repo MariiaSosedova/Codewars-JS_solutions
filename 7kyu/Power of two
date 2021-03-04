@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/534d0a229345375d520006a0
+
 function isPowerOfTwo(n){
   while (n >= 2) {
     n = n / 2;
