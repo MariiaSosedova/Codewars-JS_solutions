@@ -1,4 +1,5 @@
 https://www.codewars.com/kata/58e230e5e24dde0996000070
+
 function isPrime (n) {
   if (n <= 1) return false;
   for (let i = 2; i < Math.round(Math.sqrt(n) + 1); i++) {
