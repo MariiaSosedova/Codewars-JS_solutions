@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/5630d1747935943168000013
+
+
+const scoreToTally = function(score){
+  let letters = "abcde";
+  let repeatPart = letters[4] +' <br>'
+  return score < 5 ? letters[score-1] 
+         :repeatPart.repeat(Math.trunc(score/5)) + 
+         (score % 5 === 0 ? '' : letters[score % 5-1]);    
+}
