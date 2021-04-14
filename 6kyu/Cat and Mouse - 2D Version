@@ -1,0 +1,19 @@
+https://www.codewars.com/kata/57f8842367c96a89dc00018e
+
+function catMouse(map,moves){
+  if (!map.includes('C') || !map.includes('m')) return 'boring without two animals';
+  map = map.split('\n');
+  let catX, catY, mouseX, mouseY;
+  for (let i = 0; i < map.length; i++){
+    if (map[i].includes('C')) {
+      catX = i;
+      catY = map[i].indexOf('C');
+    }
+    if (map[i].includes('m')) {
+      mouseX = i;
+      mouseY = map[i].indexOf('m');
+    }
+  }
+  let distance = Math.abs(catX - mouseX) + Math.abs(catY - mouseY);
+  return distance <= moves ? "Caught!" : "Escaped!";
+}
