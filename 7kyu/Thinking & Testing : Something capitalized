@@ -8,3 +8,14 @@ function testit(s){
   }
   return res.trim();
 }
+
+OR
+
+function testit(s){
+  s = s.split(' ');
+  let arr = [];
+  for(let el of s){
+    arr.push(el.slice(0, -1) + el.slice(-1).toUpperCase());
+  }
+  return arr.join(" ");
+}
