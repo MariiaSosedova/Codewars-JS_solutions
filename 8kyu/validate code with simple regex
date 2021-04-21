@@ -1,0 +1,17 @@
+https://www.codewars.com/kata/56a25ba95df27b7743000016
+
+function validateCode (code) {
+  return '123'.includes((code + '')[0]);
+}
+
+or
+
+function validateCode (code) {
+ return (code + '')[0] === '1' || (code + '')[0] === '2' || (code + '')[0] === '3';
+}
+
+or
+
+function validateCode (code) {
+  return (code + '').startsWith('1') || (code + '').startsWith('2') || (code + '').startsWith('3');
+}
