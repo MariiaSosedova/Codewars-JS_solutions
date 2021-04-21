@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/58485a43d750d23bad0000e6
+
+function fizzBuzzCuckooClock(time) {
+  let [hour, minutes] = time.split(':').map(el => +el);
+  if(hour >= 13) hour -= 12;
+  if(hour === 0) hour = 12;
+  if(minutes === 0) return 'Cuckoo '.repeat(hour).trim();
+  if(minutes === 30) return 'Cuckoo';
+  if(minutes % 15 === 0) return 'Fizz Buzz';
+  if(minutes % 5 === 0) return 'Buzz';
+  if(minutes % 3 === 0) return 'Fizz';
+  return 'tick';
+}
