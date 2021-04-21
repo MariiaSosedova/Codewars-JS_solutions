@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/57b9fc5b8f5813384a000aa3
+
+function calculate(str) {
+  let arr = str.split(' ').filter(el => !isNaN(el));
+  if(str.includes('loses')) return +arr[0] - +arr[1];
+  else return +arr[0] + +arr[1];
+}
