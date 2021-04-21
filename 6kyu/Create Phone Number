@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/525f50e3b73515a6db000b83
+
+function createPhoneNumber(numbers){
+  let s = numbers.join("");
+  return `(${s.slice(0,3)}) ${s.slice(3,6)}-${s.slice(6)}`; 
+}
