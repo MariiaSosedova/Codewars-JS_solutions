@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5935ecef7705f9614500002d
+
+function detect(comment) {
+  return comment.startsWith('Can someone explain');
+}
