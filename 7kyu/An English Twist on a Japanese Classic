@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/5b04be641839f1a0ab000151
+
+function shiritori(words) {
+  if(words[0] === '') return [];
+  for(let i = 0; i < words.length-1; i++){
+    if(words[i][words[i].length-1] !== words[i+1][0]){
+      return words.slice(0, i+1);
+    }
+  }
+  return words;
+}
