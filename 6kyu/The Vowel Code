@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/53697be005f803751e0015aa
+
+function encode(string) {
+  return string.replace(/[aeiou]/ig, x => ' aeiou'.indexOf(x));
+}
+
+function decode(string) {
+  return string.replace(/[1-5]/g, x => ' aeiou'[x]);
+}
