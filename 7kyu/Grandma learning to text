@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/5a043fbef3251a5a2b0002b0
+
+function textin(s){
+  return s.replace(/two|too|to/ig, '2');
+}
