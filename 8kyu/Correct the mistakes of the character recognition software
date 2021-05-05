@@ -1,0 +1,6 @@
+https://www.codewars.com/kata/577bd026df78c19bca0002c0
+
+function correct(string)
+{
+  return string.replace(/[501]/g, x => 'SOI'['501'.indexOf(x)]);
+}
