@@ -1,0 +1,11 @@
+https://www.codewars.com/kata/57ed56657b45ef922300002b
+
+function broken(x){
+  return x.replace(/1/g, 'a').replace(/0/g, '1').replace(/a/g, '0');
+}
+
+OR
+
+function broken(x){
+  return x.replace(/./g, x => x === '1'? '0' : '1')
+}
