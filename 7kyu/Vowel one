@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/580751a40b5a777a200000a1
+
+function vowelOne(s){
+  return s.replace(/./g, x =>'aeiou'.includes(x.toLowerCase())? '1' : '0');
+}
