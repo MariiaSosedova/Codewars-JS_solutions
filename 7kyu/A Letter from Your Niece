@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/589f8bb8423ac3576a00000b
+
+function nonsense(str) {
+  str = str.replace(/[0-4]/g, x => 'aeiou'[x]).replace(/trex|raptor/gi, '')
+            .toLowerCase()
+            .replace(/i /g, 'I ');
+  str = str[0].toUpperCase() + str.slice(1) + (str.endsWith('.') ? '' : '.');
+  return str;
+}
