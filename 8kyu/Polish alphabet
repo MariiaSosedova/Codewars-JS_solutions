@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/57ab2d6072292dbf7c000039
+
+function swap(x){
+  return {ą: 'a', ć: 'c', ę: 'e', ł: 'l', ń: 'n', ó: 'o', ś: 's', ź: 'z', ż: 'z'}[x];
+}
+
+function correctPolishLetters (string) {
+  return string.replace(/[ąćęłńóśźż]/gi, swap);
+}
