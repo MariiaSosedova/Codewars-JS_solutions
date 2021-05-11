@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd
+
+function mygcd(x,y){
+  for(let i = Math.min(x, y); i > 0; i--){
+    if(!(x % i) && !(y % i)) return i;
+  }
+}
+
+OR
+
+function mygcd(x,y){
+  while (y) {
+    [x, y] = [y, x % y];
+  }
+  return x;
+}
