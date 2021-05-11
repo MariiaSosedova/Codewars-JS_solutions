@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/598d6fd5b383eda05c000046
+
+function presents(a){
+  let res = Array(a.length).fill(null);
+  for (let i = 0; i < a.length; i++){
+    res[a[i]-1] = i + 1;
+  }
+  return res;
+}
