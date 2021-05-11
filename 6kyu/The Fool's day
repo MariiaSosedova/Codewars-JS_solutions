@@ -1,0 +1,5 @@
+https://www.codewars.com/kata/59a3f82749ae65de2c000050
+
+function newsIsFalse(news) {
+  return /a.*b.*i.*g.*a.*i.*l/.test(news) ? 'YES' : 'NO';
+}
