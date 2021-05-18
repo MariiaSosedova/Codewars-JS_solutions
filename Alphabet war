@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/59377c53e66267c8f6000027
+
+function alphabetWar(fight){
+  let right = { m: 4, q: 3, d: 2, z: 1 },
+      left = { w: 4, p: 3, b: 2, s: 1 };
+  let countRight = 0,
+      countLeft = 0;
+  for( let el of fight) {
+    if(el in right) countRight += right[el];
+    if( el in left) countLeft += left[el];
+  }
+   return countRight > countLeft ? 'Right side wins!' : countRight === countLeft ? 'Let\'s fight again!' : 'Left side wins!';
+}
