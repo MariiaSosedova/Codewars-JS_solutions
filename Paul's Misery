@@ -1,0 +1,15 @@
+https://www.codewars.com/kata/57ee31c5e77282c24d000024
+
+function paul(x){
+  let obj = {
+    "kata": 5,
+    "Petes kata": 10,
+    "life": 0,
+    "eating": 1
+  }
+  let sum = 0;
+  for(let el of x){
+    sum += obj[el];
+  }
+  return sum < 40 ? 'Super happy!' : sum < 70 ? 'Happy!' : sum < 100 ? 'Sad!' : 'Miserable!';  
+}
