@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/58291fea7ff3f640980000f9
+
+function allContinents(list) {
+  let obj = {};
+  for(let el of list){
+    if(el.continent in obj){
+      obj[el.continent] += 1;
+    } else {
+      obj[el.continent] = 1;
+    }
+  }
+  return Object.keys(obj).length === 5;
+}
