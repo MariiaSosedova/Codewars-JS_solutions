@@ -1,0 +1,13 @@
+https://www.codewars.com/kata/583952fbc23341c7180002fd
+
+function orderFood(list) {
+  let obj = {};
+  for(let el of list){
+    if(el.meal in obj){
+      obj[el.meal] += 1;
+    } else {
+      obj[el.meal] = 1;
+    }
+  }
+  return obj;
+}
