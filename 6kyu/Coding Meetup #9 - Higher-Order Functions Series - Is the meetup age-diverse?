@@ -1,0 +1,9 @@
+https://www.codewars.com/kata/5829ca646d02cd1a65000284
+
+function isAgeDiverse(list) {
+  list = list.map(el => el.age);
+  for(let k = 10; k < 100; k += 10) { 
+    if(!list.some(el => el >= k && el < k + 10)) return false;
+  }
+  return list.some(el => el >= 100 && el < 200);
+}
