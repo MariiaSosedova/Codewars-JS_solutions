@@ -1,0 +1,27 @@
+https://www.codewars.com/kata/59414b46d040b7b8f7000021
+
+function tacofy(word) {
+  word = word.toLowerCase();
+  let dct = {'t': 'tomato', 'l': 'lettuce', 
+             'c': 'cheese',
+             'g': 'guacamole', 's': 'salsa',
+            'a': 'beef', 'o': 'beef','i': 'beef','u': 'beef','e': 'beef'};
+  let arr = ['shell'];
+  for(let el of word){
+    if(el in dct){
+    arr.push(dct[el]);
+    } 
+  }
+  arr.push('shell');
+  return arr;
+}
+
+OR
+
+function tacofy(word) {
+  let dct = {'t': 'tomato', 'l': 'lettuce', 
+             'c': 'cheese',
+             'g': 'guacamole', 's': 'salsa',
+            'a': 'beef', 'o': 'beef','i': 'beef','u': 'beef','e': 'beef'};
+  return ['shell'].concat(word.toLowerCase().split('').filter(el => el in dct).map(el => dct[el])).concat(['shell']);
+}
