@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/52180ce6f626d55cf8000071
+
+function strToHash(str){
+  let arr = str.split(', ').map(el => el.split('='));
+  let obj = {};
+  for(let el of arr){
+    obj[el[0]] = +el[1];
+  }
+  return str === '' ? {} : obj;
+}
