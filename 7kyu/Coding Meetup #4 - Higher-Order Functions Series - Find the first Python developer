@@ -1,0 +1,7 @@
+https://www.codewars.com/kata/5827bc50f524dd029d0005f2
+
+function getFirstPython(list) {
+  let arr = list.filter(el => el.language === 'Python').map(el => `${el.firstName}, ${el.country}`);
+  return arr.length === 0 ? 'There will be no Python developers' : arr[0];
+}
+
