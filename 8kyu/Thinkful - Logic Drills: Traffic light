@@ -1,0 +1,10 @@
+https://www.codewars.com/kata/58649884a1659ed6cb000072
+
+function updateLight(current) {
+ let obj = {
+   green: 'yellow',
+   yellow: 'red',
+   red: 'green'
+ }
+ return obj[current];
+}
