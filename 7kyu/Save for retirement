@@ -1,0 +1,16 @@
+https://www.codewars.com/kata/58177df1e7f457b89d000327
+
+function calculateRetirement(deposit, targetBalance) {
+  let obj = {};
+  for(let i = 1; i <= 6; i++){
+    let year = 0;
+    let value = 0;
+    while(value < targetBalance){
+      value += deposit;
+      value = value + value*i/100;
+      year++;
+    }
+    obj[i] = year;
+  }
+  return obj;
+}
