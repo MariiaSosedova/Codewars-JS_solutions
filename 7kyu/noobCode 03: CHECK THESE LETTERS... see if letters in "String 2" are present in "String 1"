@@ -1,0 +1,14 @@
+https://www.codewars.com/kata/57470efebf81fea166001627/solutions/javascript
+function letterCheck(arr) {
+  let a = [...arr[0].toLowerCase()];
+  a = a.filter((el, i) => i === a.indexOf(el)).sort().join('');
+  let b = [...arr[1].toLowerCase()];
+  b = b.filter((el, i) => i === b.indexOf(el)).sort().join('');
+  let count = 0;
+  for (let i =0; i <= b.length; i++) {
+     if(a.includes(b[i])){
+      count++  
+     }
+  }
+    return count === b.length;
+}
